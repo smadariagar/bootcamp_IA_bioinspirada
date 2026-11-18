@@ -1,0 +1,20 @@
+# ============================================
+# Whitelist: solo se versiona src/ y README.md
+# ============================================
+
+# 1) Ignorar TODO lo que está en la raíz
+/*
+
+# 2) Re-incluir lo que sí queremos subir
+!/src/
+!/README.md
+!/.gitignore
+
+# ============================================
+# 3) Dentro de src/: ignorar basura de Python
+# ============================================
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+venv/
+.env
